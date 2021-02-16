@@ -54,17 +54,17 @@ final DUMMY_CATEGORIES = [
     color: ColorGenerator.getColor(),
   ),
   Category(
-    id: 'c10',
+    id: 'c11',
     title: 'Summer',
     color: ColorGenerator.getColor(),
   ),
   Category(
-    id: 'c10',
+    id: 'c12',
     title: 'Summer',
     color: ColorGenerator.getColor(),
   ),
   Category(
-    id: 'c10',
+    id: 'c13',
     title: 'Summer',
     color: ColorGenerator.getColor(),
   ),
