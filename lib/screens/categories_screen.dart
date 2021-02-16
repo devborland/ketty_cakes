@@ -10,7 +10,7 @@ class CategoriesScreen extends StatelessWidget {
         title: const Text('Ketty.Cakes'),
       ),
       body: GridView(
-        padding: const EdgeInsets.all(20.0),
+        padding: const EdgeInsets.all(12.0),
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
           maxCrossAxisExtent: 220.0,
           mainAxisSpacing: 20.0,

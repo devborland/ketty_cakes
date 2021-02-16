@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ketty_cakes/widgets/meal_item.dart';
 import '../dummy_data.dart';
 
 class CategoryMealScreen extends StatelessWidget {
@@ -30,7 +31,13 @@ class CategoryMealScreen extends StatelessWidget {
       body: ListView.builder(
         itemCount: caregoryMeals.length,
         itemBuilder: (ctx, index) {
-          return Center(child: Text(caregoryMeals[index].title));
+          return MealItem(
+            affordability: caregoryMeals[index].affordability,
+            complexity: caregoryMeals[index].complexity,
+            duration: caregoryMeals[index].duration,
+            imageUrl: caregoryMeals[index].imageUrl,
+            title: caregoryMeals[index].title,
+          );
         },
       ),
     );
