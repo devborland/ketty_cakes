@@ -1,71 +1,71 @@
-import 'package:flutter/material.dart';
-
+import 'models/color_generator.dart';
 import 'models/category.dart';
 
-const DUMMY_CATEGORIES = const [
+// ignore: non_constant_identifier_names
+final DUMMY_CATEGORIES = [
   Category(
     id: 'c1',
     title: 'Italian',
-    color: Colors.purple,
+    color: ColorGenerator.getColor(),
   ),
   Category(
     id: 'c2',
     title: 'Quick & Easy',
-    color: Colors.red,
+    color: ColorGenerator.getColor(),
   ),
   Category(
     id: 'c3',
     title: 'Hamburgers',
-    color: Colors.green,
+    color: ColorGenerator.getColor(),
   ),
   Category(
     id: 'c4',
     title: 'German',
-    color: Colors.blue,
+    color: ColorGenerator.getColor(),
   ),
   Category(
     id: 'c5',
     title: 'Light & Lovely',
-    color: Colors.teal,
+    color: ColorGenerator.getColor(),
   ),
   Category(
     id: 'c6',
     title: 'Exotic',
-    color: Colors.yellow,
+    color: ColorGenerator.getColor(),
   ),
   Category(
     id: 'c7',
     title: 'Breakfast',
-    color: Colors.cyan,
+    color: ColorGenerator.getColor(),
   ),
   Category(
     id: 'c8',
     title: 'Asian',
-    color: Colors.indigo,
+    color: ColorGenerator.getColor(),
   ),
   Category(
     id: 'c9',
     title: 'French',
-    color: Colors.lime,
+    color: ColorGenerator.getColor(),
   ),
   Category(
     id: 'c10',
     title: 'Summer',
-    color: Colors.pink,
+    color: ColorGenerator.getColor(),
   ),
   Category(
     id: 'c10',
     title: 'Summer',
-    color: Colors.pink,
+    color: ColorGenerator.getColor(),
   ),
   Category(
     id: 'c10',
     title: 'Summer',
-    color: Colors.pink,
+    color: ColorGenerator.getColor(),
   ),
   Category(
     id: 'c10',
     title: 'Summer',
-    color: Colors.pink,
+    color: ColorGenerator.getColor(),
   ),
 ];
