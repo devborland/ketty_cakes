@@ -5,7 +5,7 @@ class ColorGenerator {
   static Random _random = new Random();
   static Color getColor() {
     return Color.fromARGB(
-      250,
+      100,
       _random.nextInt(255),
       _random.nextInt(255),
       _random.nextInt(255),
