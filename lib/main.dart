@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ketty_cakes/screens/error_screen.dart';
 
 import 'screens/categories_screen.dart';
 import 'screens/category_meal_screen.dart';
@@ -34,6 +35,11 @@ class MyApp extends StatelessWidget {
         '/': (ctx) => CategoriesScreen(),
         CategoryMealScreen.routeName: (ctx) => CategoryMealScreen(),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
+        ErrorScreen.routeName: (ctx) => ErrorScreen(),
+      },
+
+      onUnknownRoute: (settings) {
+        return MaterialPageRoute(builder: (ctx) => ErrorScreen());
       },
     );
   }
