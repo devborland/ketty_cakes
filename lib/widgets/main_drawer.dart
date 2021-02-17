@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ketty_cakes/screens/filters_screen.dart';
 
 class MainDrawer extends StatelessWidget {
   @override
@@ -23,15 +24,28 @@ class MainDrawer extends StatelessWidget {
               ),
             ),
             SizedBox(height: 16.0),
-            buildListTile('Meals', Icons.restaurant),
-            buildListTile('Filter', Icons.filter_list),
+            buildListTile(
+              'Meals',
+              Icons.restaurant,
+              () {
+                Navigator.of(context).pushReplacementNamed('/');
+              },
+            ),
+            buildListTile(
+              'Filter',
+              Icons.filter_list,
+              () {
+                Navigator.of(context)
+                    .pushReplacementNamed(FiltersScreen.routName);
+              },
+            ),
           ],
         ),
       ),
     );
   }
 
-  Widget buildListTile(String title, IconData icon) {
+  Widget buildListTile(String title, IconData icon, Function onTap) {
     return ListTile(
       leading: Icon(
         icon,
@@ -45,9 +59,7 @@ class MainDrawer extends StatelessWidget {
           fontWeight: FontWeight.bold,
         ),
       ),
-      onTap: () {
-        //...
-      },
+      onTap: onTap,
     );
   }
 }
