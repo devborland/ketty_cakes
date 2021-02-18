@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ketty_cakes/screens/filters_screen.dart';
+import '../screens/filters_screen.dart';
 
 class MainDrawer extends StatelessWidget {
   @override
